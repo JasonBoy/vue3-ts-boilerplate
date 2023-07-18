@@ -14,6 +14,7 @@ Based on `npm create vite@latest`, with additional libs preconfigured for real p
   - `dayjs` for date handling
   - Pre-added `.env` files for different modes/envs
   - If you use yarn or pnpm, change `"preinstall": "npx only-allow npm"` to the one you use in `package.json`
+  - By default `pages` dir for routes(pages), `components` dir for components
 - Built in `HttpClient`(with native `fetch` API) for quick api requests
   - Simplified `get`,`post`,`put`... methods for daily usages
   - Built-in `upload`, `download` file methods

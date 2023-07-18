@@ -1,0 +1,56 @@
+{
+  "name": "vue3-ts-boilerplate",
+  "description": "Vue 3 with TypeScript, Vue-Router, Pinia, TailwindCSS, ESLint, Prettier, Git Hooks preconfigured",
+  "private": true,
+  "version": "0.0.1",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "build:test": "vite build --mode test",
+    "preview": "vite preview",
+    "tsc": "vue-tsc --noEmit",
+    "lint": "eslint --ignore-path .gitignore --ext .ts,js,.vue ./",
+    "lint-fix": "npm run lint -- --fix",
+    "preinstall": "npx only-allow npm",
+    "prepare": "husky install"
+  },
+  "engines": {
+    "node": ">= 18.16"
+  },
+  "license": "MIT",
+  "lint-staged": {
+    "**/*.{js,ts,vue}": [
+      "npm run lint-fix"
+    ],
+    "**/*.{json,css}": [
+      "prettier --write"
+    ]
+  },
+  "dependencies": {
+    "dayjs": "^1.11.8",
+    "downloadjs": "^1.4.7",
+    "mime": "^3.0.0",
+    "pinia": "^2.1.4",
+    "vue": "^3.2.47",
+    "vue-router": "^4.2.2"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^6.1.0",
+    "@typescript-eslint/parser": "^6.1.0",
+    "@vitejs/plugin-vue": "^4.1.0",
+    "autoprefixer": "^10.4.14",
+    "eslint": "^8.43.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-prettier": "^5.0.0",
+    "eslint-plugin-vue": "^9.15.1",
+    "husky": "^8.0.0",
+    "lint-staged": "^13.2.3",
+    "postcss": "^8.4.24",
+    "prettier": "^3.0.0",
+    "tailwindcss": "^3.3.2",
+    "typescript": "^5.1.6",
+    "vite": "^4.3.9",
+    "vue-tsc": "^1.4.2"
+  }
+}
